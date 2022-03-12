@@ -8,7 +8,7 @@ if Config.Framework == "QBCore" then
     end)
 elseif Config.Framework == "ESX" then 
     TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-    ESX.RegisterUseableItem(Config.ItemName, function(source, item)
+    ESX.RegisterUsableItem(Config.ItemName, function(source, item)
         local src = source
         TriggerClientEvent('emfan-hostage:client:UseItem', src)
     end)
