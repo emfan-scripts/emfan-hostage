@@ -213,7 +213,7 @@ end)
 
 
 function notif(text)
-    SetNotificationTextEnty("STRING")
+    SetNotificationTextEntry("STRING")
     AddTextComponentString(text)
     DrawNotification(false, false)
 end
