@@ -126,7 +126,6 @@ AddEventHandler('emfan-hostage:client:SyncRemove', function(KidnappedPlayer, Kid
     local xPlayer = PlayerPedId()
     local EndLoop = 0
     while KidnappedPlayer ~= xPlayer and EndLoop ~= 1 do
-        print("PROIJNMTD")
         Wait(1000)
         local xPlayerCoords = GetEntityCoords(xPlayer)
         local xDist = #(xPlayerCoords - KidnappedCoords)
