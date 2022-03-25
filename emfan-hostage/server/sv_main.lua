@@ -1,7 +1,7 @@
 if Config.Framework == "QBCore" then
     QBCore = exports['qb-core']:GetCoreObject()
     
-    QBCore.Functions.CreateUsableItem(Config.ItemName, function(source, item)
+    QBCore.Functions.CreateUseableItem(Config.ItemName, function(source, item)
         local src = source
         
         TriggerClientEvent('emfan-hostage:client:UseItem', src)
