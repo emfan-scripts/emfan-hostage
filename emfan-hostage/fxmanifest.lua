@@ -22,7 +22,8 @@ server_scripts {
 }
 
 escrow_ignore {
-    '*/*.*'
+    '*/*.*',
+    'config.lua',
 }
 
 lua54 'yes'
